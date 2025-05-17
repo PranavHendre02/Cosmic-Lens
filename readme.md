@@ -136,7 +136,7 @@ Used for structuring content on all pages (`index.html`, `apod.html`, `about.htm
 
 Handles API calls, DOM manipulation, and dynamic content loading.
 
-* `rover.js` - Fetches and renders Mars Rover images based on selected date and rover.
+* `check.js` - Fetches and renders Mars Rover images based on selected date and rover.
 * `apod.js` - Loads the daily APOD with title and description.
 
 ### 🎨 Tailwind CSS
