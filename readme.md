@@ -8,7 +8,7 @@ Explore the cosmos through NASA's lens! CosmicLens is a **responsive web applica
 
 Check out the live site here: [CosmicLens Live](https://pranavhendre02.github.io/Cosmic-Lens/)
 
-![Website Screenshot](./assets/cosmiclens-screenshot.png)
+![Website Screenshot](https://github.com/PranavHendre02/Cosmic-Lens/blob/8cffafbd0cbbb88dd309d53d2a542a4b5df8aa26/Cosmic%20Lens.png)
 
 ---
 
