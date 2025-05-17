@@ -1,12 +1,20 @@
-# 🌌 Cosmic Lens
+# 🌌 CosmicLens
 
-Explore the cosmos through NASA's lens! Cosmic Lens is a **responsive web application** built using **HTML, JavaScript, and Tailwind CSS**. It allows users to interact with two of NASA's fascinating APIs: **Mars Rover Photos** and **Astronomy Picture of the Day (APOD)**. With a clean UI, modern design, and responsive layout, it brings the wonders of space closer to you.
+Explore the cosmos through NASA's lens! CosmicLens is a **responsive web application** built using **HTML, JavaScript, and Tailwind CSS**. It allows users to interact with two of NASA's fascinating APIs: **Mars Rover Photos** and **Astronomy Picture of the Day (APOD)**. With a clean UI, modern design, and responsive layout, it brings the wonders of space closer to you.
+
+---
+
+## 🌐 Live Website
+
+Check out the live site here: [CosmicLens Live](https://pranavhendre02.github.io/Cosmic-Lens/)
+
+![Website Screenshot](./assets/cosmiclens-screenshot.png)
 
 ---
 
 ## 🔍 Features
 
-* 🛰 **Mars Rover Photos**
+* 🚐 **Mars Rover Photos**
 
   * View images captured by **Curiosity**, **Spirit**, or **Opportunity** rovers.
   * Filter by a specific **Earth date**.
@@ -28,43 +36,6 @@ Explore the cosmos through NASA's lens! Cosmic Lens is a **responsive web applic
 * ❌ **No External CSS Files**
 
   * Styling is managed using **Tailwind CSS via CDN** and inline `<style>` for custom animations.
-
----
-
-## 🧩 Technologies Used
-
-### 🧱 HTML
-
-* Structure of the web pages
-* Semantic tags for accessibility and SEO
-
-### 🎯 JavaScript
-
-* Fetch API to interact with NASA APIs
-* DOM manipulation to display images dynamically
-* Event handling for form submission and hamburger menu toggle
-
-### 🎨 Tailwind CSS
-
-* CDN-based utility-first CSS framework
-* Responsive grid layout for image gallery
-* Custom styles for hover effects, transparency, and blur effects (navbar/footer)
-
-```html
-<!-- Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-```
-
-```javascript
-// Sample Fetch from APOD API
-fetch(`https://api.nasa.gov/planetary/apod?api_key=YOUR_API_KEY`)
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("title").textContent = data.title;
-    document.getElementById("explanation").textContent = data.explanation;
-    document.getElementById("media").src = data.url;
-  });
-```
 
 ---
 
@@ -101,7 +72,7 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=YOUR_API_KEY`)
 
 * Shares project and rover background information.
 
-### 🗺️ Navigation
+### 🗜️ Navigation
 
 * Fixed, transparent navbar with backdrop blur.
 * Hover underline effects.
@@ -136,7 +107,7 @@ CosmicLens/
 * Active internet connection
 * A valid NASA API key
 
-### 📅 Setup
+### 🗓️ Setup
 
 1. Clone the repo:
 
@@ -152,6 +123,39 @@ git clone https://github.com/PranavHendre02/Cosmic-Lens.git
 * **Mars Rover Photos:** Choose rover, date, and click "Send" to view images.
 * **APOD:** Automatically displays the latest astronomy media and description.
 * **Responsive Menu:** Tap the hamburger icon on small screens for navigation links.
+
+---
+
+## 📋 Tech Stack & Implementation
+
+### 🛠️ HTML
+
+Used for structuring content on all pages (`index.html`, `apod.html`, `about.html`).
+
+### 🔌 JavaScript
+
+Handles API calls, DOM manipulation, and dynamic content loading.
+
+* `rover.js` - Fetches and renders Mars Rover images based on selected date and rover.
+* `apod.js` - Loads the daily APOD with title and description.
+
+### 🎨 Tailwind CSS
+
+Used via CDN for utility-first styling.
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+```
+
+Custom inline styles enhance hover effects and transitions.
+
+Example Tailwind HTML structure:
+
+```html
+<div class="bg-black text-white p-4">
+  <h1 class="text-3xl font-bold underline">CosmicLens</h1>
+</div>
+```
 
 ---
 
@@ -178,6 +182,6 @@ For educational use only. Compliant with [NASA's API terms](https://api.nasa.gov
 
 ---
 
-## 📅 Created By
+## 🗓️ Created By
 
-**[Pranav Hendre](https://github.com/PranavHendre02)** 
+**[Pranav Hendre](https://github.com/PranavHendre02)** — 
