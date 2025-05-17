@@ -6,10 +6,10 @@
     <title>Space Explorer - About</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        nav ul li a, footer p {
+        nav ul li a, footer p, .social-links a {
             position: relative;
         }
-        nav ul li a::after, footer p::after {
+        nav ul li a::after, footer p::after, .social-links a::after {
             content: '';
             position: absolute;
             left: 0;
@@ -19,7 +19,7 @@
             background-color: white;
             transition: width 0.3s ease-in-out;
         }
-        nav ul li a:hover::after, footer p:hover::after {
+        nav ul li a:hover::after, footer p:hover::after, .social-links a:hover::after {
             width: 100%;
         }
     </style>
@@ -46,7 +46,7 @@
         <section class="bg-white bg-opacity-90 backdrop-blur-sm p-6 rounded-2xl shadow-lg max-w-4xl mx-auto">
             <h2 class="text-2xl font-bold uppercase mb-4 text-center">About CosmicLens</h2>
             <p class="text-gray-700 mb-4">
-                CosmicLens is a web application that allows users toexplore NASA's vast collection of space imagery. 
+                CosmicLens is a web application that allows users to explore NASA's vast collection of space imagery. 
                 Using NASA's open APIs, this project provides two main features:
             </p>
             <ul class="list-disc list-inside text-gray-700 mb-4">
@@ -108,6 +108,24 @@
                 <li><strong>Date Selection</strong>: Experiment with different dates within a rover’s operational period to find available photos.</li>
                 <li><strong>Internet Connection</strong>: Ensure a stable connection, as the app relies on NASA’s APIs.</li>
             </ul>
+            <h3 class="text-xl font-semibold mb-2">Connect with the Creator</h3>
+            <p class="text-gray-700 mb-4">
+                Follow the creator of CosmicLens on social media for updates and more projects:
+            </p>
+            <div class="social-links flex justify-center space-x-4 mb-4">
+                <a href="https://github.com/PranavHendre02" target="_blank" class="flex items-center text-gray-800">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/github.png" alt="GitHub" class="w-6 h-6 mr-1">
+                    <span class="font-semibold">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/pranav-hendre-b07339316/" target="_blank" class="flex items-center text-gray-800">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn" class="w-6 h-6 mr-1">
+                    <span class="font-semibold">LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/pranavhendre02/" target="_blank" class="flex items-center text-gray-800">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram" class="w-6 h-6 mr-1">
+                    <span class="font-semibold">Instagram</span>
+                </a>
+            </div>
         </section>
     </main>
     <footer class="bg-black bg-opacity-50 backdrop-blur-md text-white text-center py-4">
