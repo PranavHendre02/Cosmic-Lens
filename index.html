@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📸 Cosmic Lens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        nav ul li a, footer p {
+            position: relative;
+        }
+        nav ul li a::after, footer p::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            height: 2px;
+            width: 0;
+            background-color: white;
+            transition: width 0.3s ease-in-out;
+        }
+        nav ul li a:hover::after, footer p:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="fixed top-0 w-full z-10 bg-black bg-opacity-50 backdrop-blur-md">
+        <nav class="container mx-auto flex items-center justify-between p-4">
+            <div class="flex items-center">
+                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/planet.png" alt="Planet Logo" class="w-10 h-10 hover:scale-110 transition-transform">
+            </div>
+            <button id="hamburger" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <ul id="nav-links" class="hidden md:flex md:space-x-6 text-white">
+                <li><a href="index.html" class="uppercase font-bold">Mars Rover</a></li>
+                <li><a href="apod.html" class="uppercase font-bold">Picture of the Day</a></li>
+                <li><a href="about.html" class="uppercase font-bold">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-grow flex items-center justify-center mt-20">
+        <section class="container mx-auto px-4">
+            <div class="bg-white bg-opacity-90 backdrop-blur-sm p-6 rounded-2xl shadow-lg max-w-md mx-auto">
+                <h2 class="text-2xl font-bold text-center uppercase mb-4">Select Parameters</h2>
+                <div class="flex flex-col space-y-4">
+                    <label for="rover" class="font-semibold">Rover</label>
+                    <select name="rover" id="rover" class="p-2 rounded-full border-none bg-gray-200 text-gray-800 focus:ring-2 focus:ring-blue-500">
+                        <option value="Curiosity">Curiosity</option>
+                        <option value="Spirit">Spirit</option>
+                        <option value="Opportunity">Opportunity</option>
+                    </select>
+                    <label for="date" class="font-semibold">Date</label>
+                    <input type="date" name="date" id="date" class="p-2 rounded-full border-none bg-gray-200 text-gray-800 focus:ring-2 focus:ring-blue-500">
+                    <button id="btn" class="bg-black text-white p-2 rounded-full hover:bg-gray-800 transition">Send</button>
+                </div>
+            </div>
+            <div class="mainshowcase mt-8 hidden">
+                <div class="showcase grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 bg-white rounded-xl shadow-lg mx-auto max-w-7xl" id="case"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-black bg-opacity-50 backdrop-blur-md text-white text-center py-4">
+        <p class="font-bold inline-block">COPYRIGHT @ 2025</p>
+    </footer>
+    <script src="check.js"></script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('w-full');
+            navLinks.classList.toggle('bg-black');
+            navLinks.classList.toggle('bg-opacity-75');
+            navLinks.classList.toggle('p-4');
+        });
+    </script>
+</body>
+</html>
