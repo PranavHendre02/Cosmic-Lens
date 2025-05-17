@@ -1,12 +1,12 @@
-# 🌌 CosmicLens
+# 🌌 Cosmic Lens
 
-Explore the cosmos through NASA's lens! CosmicLens is a **responsive web application** built using **HTML, JavaScript, and Tailwind CSS**. It allows users to interact with two of NASA's fascinating APIs: **Mars Rover Photos** and **Astronomy Picture of the Day (APOD)**. With a clean UI, modern design, and responsive layout, it brings the wonders of space closer to you.
+Explore the cosmos through NASA's lens! Cosmic Lens is a **responsive web application** built using **HTML, JavaScript, and Tailwind CSS**. It allows users to interact with two of NASA's fascinating APIs: **Mars Rover Photos** and **Astronomy Picture of the Day (APOD)**. With a clean UI, modern design, and responsive layout, it brings the wonders of space closer to you.
 
 ---
 
 ## 🌐 Live Website
 
-Check out the live site here: [CosmicLens Live](https://pranavhendre02.github.io/Cosmic-Lens/)
+Check out the live site here: [Cosmic Lens Live](https://pranavhendre02.github.io/Cosmic-Lens/)
 
 ![Website Screenshot](https://github.com/PranavHendre02/Cosmic-Lens/blob/8cffafbd0cbbb88dd309d53d2a542a4b5df8aa26/Cosmic%20Lens.png)
 
