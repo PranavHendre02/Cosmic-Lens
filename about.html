@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📸 Cosmic Lens- About</title>
+    <title>Space Explorer - About</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         nav ul li a, footer p {
@@ -44,9 +44,9 @@
     </header>
     <main class="flex-grow mt-20 container mx-auto px-4 py-8">
         <section class="bg-white bg-opacity-90 backdrop-blur-sm p-6 rounded-2xl shadow-lg max-w-4xl mx-auto">
-            <h2 class="text-2xl font-bold uppercase mb-4 text-center">About Space Explorer</h2>
+            <h2 class="text-2xl font-bold uppercase mb-4 text-center">About CosmicLens</h2>
             <p class="text-gray-700 mb-4">
-                Space Explorer is a web application that allows users to explore NASA's vast collection of space imagery. 
+                CosmicLens is a web application that allows users toexplore NASA's vast collection of space imagery. 
                 Using NASA's open APIs, this project provides two main features:
             </p>
             <ul class="list-disc list-inside text-gray-700 mb-4">
@@ -54,7 +54,7 @@
                 <li><strong>Astronomy Picture of the Day (APOD):</strong> Discover NASA's daily curated image or video, complete with a detailed explanation.</li>
             </ul>
             <h3 class="text-xl font-semibold mb-2">About NASA's Mars Rovers</h3>
-            <p class="text-gray-700">
+            <p class="text-gray-700 mb-4">
                 NASA's Mars rovers are robotic explorers designed to study the Martian surface. 
                 <ul class="list-disc list-inside mb-4">
                     <li><strong>Curiosity:</strong> Launched in 2011, Curiosity is the largest rover, exploring Gale Crater to study Mars' habitability.</li>
@@ -63,6 +63,51 @@
                 </ul>
                 These rovers have provided invaluable data and stunning images of the Red Planet.
             </p>
+            <h3 class="text-xl font-semibold mb-2">How to Use CosmicLens</h3>
+            <p class="text-gray-700 mb-4">
+                CosmicLens is designed to be intuitive, allowing you to explore Mars Rover photos and NASA's Astronomy Picture of the Day with ease. Below are detailed instructions for using the app, with a focus on the Mars Rover Photos feature.
+            </p>
+            <h4 class="text-lg font-semibold mb-2">Using the Mars Rover Photos Feature</h4>
+            <ol class="list-decimal list-inside text-gray-700 mb-4">
+                <li><strong>Navigate to the Mars Rover Page</strong>: Open the main page by loading <code>index.html</code> in your browser or clicking the "Mars Rover" link in the navigation bar.</li>
+                <li><strong>Select a Rover</strong>: In the centered form, choose a rover from the dropdown menu:
+                    <ul class="list-disc list-inside ml-6">
+                        <li><strong>Curiosity</strong>: Active since August 6, 2012, exploring Gale Crater for signs of past habitability.</li>
+                        <li><strong>Spirit</strong>: Operated from January 4, 2004, to March 22, 2010, in Gusev Crater.</li>
+                        <li><strong>Opportunity</strong>: Operated from January 25, 2004, to June 10, 2018, in Meridiani Planum.</li>
+                    </ul>
+                </li>
+                <li><strong>Choose an Earth Date</strong>: Use the date picker to select a specific Earth date. Ensure the date falls within the rover’s operational period:
+                    <ul class="list-disc list-inside ml-6">
+                        <li>Curiosity: After August 6, 2012.</li>
+                        <li>Spirit: January 4, 2004 – March 22, 2010.</li>
+                        <li>Opportunity: January 25, 2004 – June 10, 2018.</li>
+                    </ul>
+                    Note: Not all dates have available photos due to mission schedules or data gaps.
+                </li>
+                <li><strong>Fetch Photos</strong>: Click the black "Send" button to query NASA's Mars Rover Photos API. If photos are available, a responsive grid will appear, displaying images in 1–4 columns depending on your screen size. Each image is styled with rounded corners and a shadow effect.</li>
+                <li><strong>Handle No Results</strong>: If no photos are found (e.g., due to an invalid date or no data), an alert will prompt you to try a different rover or date. The photo grid remains hidden until valid data is fetched.</li>
+                <li><strong>Explore Photos</strong>: Scroll through the grid to view high-resolution Mars images captured by the selected rover on the chosen date.</li>
+            </ol>
+            <h4 class="text-lg font-semibold mb-2">Using the Astronomy Picture of the Day (APOD)</h4>
+            <p class="text-gray-700 mb-4">
+                Click the "Picture of the Day" link in the navbar to visit <code>apod.html</code>. The page automatically fetches and displays NASA's daily curated image or video, along with its title and a detailed explanation, using the APOD API. No user input is required.
+            </p>
+            <h4 class="text-lg font-semibold mb-2">Navigating the App</h4>
+            <p class="text-gray-700 mb-4">
+                Use the fixed navigation bar at the top to switch between pages:
+                <ul class="list-disc list-inside mb-4">
+                    <li><strong>Mars Rover</strong>: Access the photo fetcher.</li>
+                    <li><strong>Picture of the Day</strong>: View the daily APOD.</li>
+                    <li><strong>About</strong>: Learn about the app and rovers.</li>
+                </ul>
+                On mobile devices (screen width <768px), click the hamburger icon (three lines) in the top-right corner to toggle a dropdown menu with these links. The navbar and footer feature a transparent, blurred background with hover underline effects for a modern look.
+            </p>
+            <h4 class="text-lg font-semibold mb-2">Tips for Best Experience</h4>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li><strong>Date Selection</strong>: Experiment with different dates within a rover’s operational period to find available photos.</li>
+                <li><strong>Internet Connection</strong>: Ensure a stable connection, as the app relies on NASA’s APIs.</li>
+            </ul>
         </section>
     </main>
     <footer class="bg-black bg-opacity-50 backdrop-blur-md text-white text-center py-4">
