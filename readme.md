@@ -51,8 +51,6 @@ Check out the live site here: [Cosmic Lens Live](https://pranavhendre02.github.i
 * **Endpoint:** `https://api.nasa.gov/planetary/apod`
 * **Parameters:** `api_key`
 
-> **API Key Used:** `8ZWsWRhe6Bi9cV0LsGtkdVblkTAIYJpincIqeoM9` (Replace with your own key if needed.)
-
 ---
 
 ## 📖 How It Works
@@ -184,4 +182,4 @@ For educational use only. Compliant with [NASA's API terms](https://api.nasa.gov
 
 ## 🗓️ Created By
 
-**[Pranav Hendre](https://github.com/PranavHendre02)** — 
+**[Pranav Hendre](https://github.com/PranavHendre02)** 
